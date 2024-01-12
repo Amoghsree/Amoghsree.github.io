@@ -8,30 +8,60 @@
         text-align: center;
         font-size: 40px;
       }
-      .header {
-        padding: 60px;
-        text-align: center;
-        background: #1abc9c;
+      /* Style tab links */
+      .tablink {
+        background-color: #555;
         color: white;
-        font-size: 30px;
-      }
-      .button {
-        background-color: #04AA6D;
+        float: left;
         border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
+        outline: none;
         cursor: pointer;
+        padding: 14px 16px;
+        font-size: 17px;
+        width: 25%;
       }
+      
+      .tablink:hover {
+        background-color: #777;
+      }
+      
+      /* Style the tab content (and add height:100% for full page content) */
+      .tabcontent {
+        color: white;
+        display: none;
+        padding: 100px 20px;
+        height: 100%;
+      }
+      
+    #Home {background-color: red;}
+    #News {background-color: green;}
+    #Contact {background-color: blue;}
+    #About {background-color: orange;}
+
     </style>
   </head>
 <body>
   <h1>South Indian Foods</h1>
-  <a href="#" class="button">Karnataka</a>
+<button class="tablink" onclick="openPage('Karnataka', this, 'red')" id="defaultOpen">Karnataka</button>
+<button class="tablink" onclick="openPage('Andra Pradesh', this, 'green')">Andra Pradesh</button>
+<button class="tablink" onclick="openPage('Tamil Nadu', this, 'blue')">Tamil Nadu</button>
+<button class="tablink" onclick="openPage('Kerala', this, 'orange')">Kerala</button>
+
+<div id="Karnataka" class="tabcontent">
+  <a href = "https://www.github.com></a>
+</div>
+
+<div id="Andra Pradesh" class="tabcontent">
+  <a href = "https://www.github.com></a>
+</div>
+
+<div id="Tamil Nadu" class="tabcontent">
+  <a href = "https://www.github.com></a>
+</div>
+
+<div id="Kerala" class="tabcontent">
+ <a href = "https://www.github.com></a>
+</div>
   
 </body>
 </html>
